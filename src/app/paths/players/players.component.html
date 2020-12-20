@@ -1,0 +1,7 @@
+<div>
+    <input *ngIf="name; outputBlock" type="text" name="username" value="name">
+    <div #outputBlock>
+        <p>{{name}}</p>
+    </div>
+    <input type="button" (click)="onPass()">
+</div>
